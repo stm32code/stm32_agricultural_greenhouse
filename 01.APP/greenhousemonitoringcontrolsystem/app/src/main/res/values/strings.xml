@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">农业大棚监控控制系统</string>
+    <string name="data_view">数据</string>
+    <string name="chart_view">图表</string>
+    <string name="my_view">我的</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

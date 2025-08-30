@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dataView"
+        android:icon="@mipmap/data_icon"
+        android:title="@string/data_view" />
+
+    <item
+        android:id="@+id/chartView"
+        android:icon="@mipmap/chart_icon"
+        android:title="@string/chart_view" />
+<!--    <item-->
+<!--        android:id="@+id/myView"-->
+<!--        android:icon="@mipmap/my_icon"-->
+<!--        android:title="@string/my_view" />-->
+</menu>

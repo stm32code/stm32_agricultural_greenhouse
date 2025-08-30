@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DataFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="欢迎使用智慧大棚APP"
+            android:textColor="#50C0F2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.youth.banner.Banner
+            android:id="@+id/bannerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="15dp"
+            android:background="#B0E4FB" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:text="实时数据"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="3dp"
+            android:background="#83B9B9B9" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp">
+
+            <TableRow
+                android:layout_marginStart="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/temp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="温度数据:" />
+
+                <TextView
+                    android:id="@+id/tempText"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Temp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/humi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="湿度数据:" />
+
+                <TextView
+                    android:id="@+id/humiText"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hum" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="光照数据:" />
+
+                <TextView
+                    android:id="@+id/lightText"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lum" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/trhumi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="土壤湿度:" />
+
+                <TextView
+                    android:id="@+id/trHumiText"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Soil" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="3dp"
+            android:background="#83B9B9B9" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp">
+
+            <TableRow
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/temp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="温度" />
+
+                <SeekBar
+                    android:id="@+id/tempSeekBar"
+                    android:layout_weight="1"
+                    android:max="100" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="当前为" />
+
+                <TextView
+                    android:id="@+id/tempSeekBarText"
+                    android:layout_width="wrap_content"
+                    android:text="0" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/humi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="湿度" />
+
+                <SeekBar
+                    android:id="@+id/humiSeekBar"
+                    android:layout_weight="1"
+                    android:max="100" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="当前为" />
+
+                <TextView
+                    android:id="@+id/humiSeekBarText"
+                    android:layout_width="wrap_content"
+                    android:text="0" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/temp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="光照" />
+
+                <SeekBar
+                    android:id="@+id/lightSeekBar"
+                    android:layout_weight="1"
+                    android:max="200" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="当前为" />
+
+                <TextView
+                    android:id="@+id/lightSeekBarText"
+                    android:layout_width="wrap_content"
+                    android:text="0" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/trhumi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="土壤" />
+
+                <SeekBar
+                    android:id="@+id/trHumiSeekBar"
+                    android:layout_weight="1"
+                    android:max="200" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="当前为" />
+
+                <TextView
+                    android:id="@+id/trHumiSeekBarText"
+                    android:layout_width="wrap_content"
+                    android:text="0" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水泵开关"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/waterSwitch"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/switch_button_selector" />
+
+            <TextView
+                android:id="@+id/messageText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#85C688"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="3dp"
+            android:background="#83B9B9B9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:text="自动模式" />
+
+            <ImageView
+                android:id="@+id/autoSwitch"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/switch_button_selector" />/>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:text="手动模式" />
+
+            <ImageView
+                android:id="@+id/manualSwitch"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/switch_button_selector" />/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
